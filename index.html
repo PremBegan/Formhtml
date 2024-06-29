@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color: teal;
+            padding: 20px;
+            border-top-right-radius: 30PX;
+            border-bottom-left-radius: 30PX;
+            transition: all;
+            transition-duration: 2s;
+            cursor: pointer;
+            animation: bg 6s ease infinite;
+        }
+        @keyframes bg {
+            0%{
+                filter: hue-rotate(0deg);
+
+            }
+            100%{
+                filter: hue-rotate(360deg);
+            }
+            
+        }
+        div:hover{
+            background-color: green;
+            color: red;
+        }
+    </style>
+</head>
+<body bgcolor="#4DD0E1">
+    <!-- form tag -->
+    <div>
+        <h3>College Admission Form</h3>
+    <form>
+        Name <input type="text" placeholder="Enter your name"> <br> <br>
+        Age <input type="number" placeholder="Enter the age"> <br> <br>
+        Email <input type="email" placeholder="Enter the email"> <br> <br>
+        Choose File <input type="file"> <br> <br>
+        <button>SUBMIT</button>
+        <p>&#169 ALL RIGHTS RESERVED SUJAL</p>
+    </form>
+    </div>
+    
+</body>
+</html>
